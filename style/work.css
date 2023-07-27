@@ -1,0 +1,101 @@
+/* 作ったもの */
+
+.work-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: var(--main-border);
+  padding: 8px 16px;
+  margin-top: 20px;
+}
+
+.work-content {
+  border: var(--main-border);
+  margin-top: 10px;
+}
+
+.title-container {
+  padding: 6px 18px;
+  border-bottom: var(--main-border);
+}
+
+.content-container {
+  display: flex;
+}
+
+.description {
+  width: 60%;
+  border-right: var(--main-border);
+  padding: 40px;
+}
+
+.lists-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.lang-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.lang-list li {
+  margin-right: 16px;
+}
+
+.link-list {
+  list-style: none;
+}
+
+.link-list li {
+  padding: 6px;
+  border-bottom: var(--main-border);
+}
+
+@media screen and (max-width: 900px) {
+  .description {
+    padding: 20px;
+  }
+
+  .lists-container {
+    padding: 20px;
+  }
+
+  .lang-list li {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .description {
+    padding: 10px;
+  }
+
+  .lists-container {
+    padding: 10px;
+  }
+
+  .lang-list li {
+    margin-right: 6px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .content-container {
+    display: block;
+  }
+
+  .description {
+    width: 100%;
+    border-right: none;
+  }
+
+  .lists-container {
+    width: 100%;
+    display: flex;
+  }
+}
